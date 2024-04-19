@@ -12,7 +12,6 @@ function App() {
   const ref = useRef();
   return (
     <div>
-      <Navbar />
       <Parallax pages={4} ref={ref}>
         <ParallaxLayer
           offset={0}
@@ -23,6 +22,10 @@ function App() {
             backgroundSize: "cover",
           }}
         ></ParallaxLayer>
+
+        <ParallaxLayer>
+          <Navbar />
+        </ParallaxLayer>
 
         <ParallaxLayer
           offset={2}
@@ -49,10 +52,10 @@ function App() {
         >
           <h1>Web development is fun!</h1>
         </ParallaxLayer>
-        {/* 
+
         <ParallaxLayer sticky={{ start: 0.9, end: 2.5 }}>
           <img src={daniel} />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
       </Parallax>
       <HomePage />
     </div>

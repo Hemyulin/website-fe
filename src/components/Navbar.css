@@ -1,9 +1,14 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding: 2em;
+  background-color: black;
 }
 
 .links-div {
   display: flex;
-  justify-content: space-evenly;
+}
+
+.links-div div {
+  margin-left: 1em;
 }
