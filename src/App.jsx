@@ -23,7 +23,7 @@ function App() {
           }}
         ></ParallaxLayer>
 
-        <ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.5} sticky={{ start: 0, end: 4 }}>
           <Navbar />
         </ParallaxLayer>
 
