@@ -64,3 +64,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.home-page-welcome {
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  padding: 0.2em;
+}
+
+.home-info-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}

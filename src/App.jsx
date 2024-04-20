@@ -1,12 +1,16 @@
 import daniel from "./assets/Daniel_Head.png";
 import background from "./assets/background.webp";
 import planets from "./assets/planets.webp";
+import hobbies from "./assets/hobbies.webp";
+import hobbies2 from "./assets/hobbies2.webp";
+import blackbackground from "./assets/background-black.webp";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 import { HomePage } from "./pages/HomePage";
 import { useRef } from "react";
 import { Navbar } from "./components/Navbar";
+import { Infobox } from "./components/Infobox";
 
 function App() {
   const ref = useRef();
@@ -18,7 +22,7 @@ function App() {
           speed={1}
           factor={2}
           style={{
-            backgroundImage: `url(${planets})`,
+            backgroundImage: `url(${blackbackground})`,
             backgroundSize: "cover",
           }}
         ></ParallaxLayer>
@@ -42,7 +46,12 @@ function App() {
           speed={0.05}
           onClick={() => ref.current.scrollTo(3)}
         >
-          <h1>Welcome to my website</h1>
+          <h1 className="home-page-welcome">Hi, my name is Daniel</h1>
+          <div className="home-info-div">
+            <Infobox />
+            <Infobox />
+            <Infobox />
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -53,11 +62,10 @@ function App() {
           <h1>Web development is fun!</h1>
         </ParallaxLayer>
 
-        <ParallaxLayer sticky={{ start: 0.9, end: 2.5 }}>
+        {/* <ParallaxLayer sticky={{ start: 1.1, end: 2.5 }} speed={0.3}>
           <img src={daniel} />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
       </Parallax>
-      <HomePage />
     </div>
   );
 }
