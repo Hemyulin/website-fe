@@ -3,7 +3,6 @@ import { circIn, motion } from "framer-motion";
 import "./Sidebar.scss";
 import { Links } from "./links/Links";
 import { ToggleButton } from "./toggleButton/ToggleButton";
-import { type } from "os";
 
 export const Sidebar = () => {
   const [open, setOpen] = useState(false);
