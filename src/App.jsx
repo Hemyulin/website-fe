@@ -1,10 +1,11 @@
 import "./app.scss";
+import { Navbar } from "./components/navbar/Navbar";
 
 function App() {
   return (
     <div>
       <section>
-        <a href="">Hello World!</a>
+        <Navbar />
       </section>
       <section>Parallax</section>
       <section>Services</section>
