@@ -1,3 +1,4 @@
+import { Parallax } from "@react-spring/parallax";
 import "./app.scss";
 import { Hero } from "./components/hero/Hero";
 import { Navbar } from "./components/navbar/Navbar";
@@ -9,9 +10,13 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">Services</section>
+      <section id="Services">
+        <Parallax type="services" />
+      </section>
       <section>Services</section>
-      <section id="Portfolio">Portfolio</section>
+      <section id="Portfolio">
+        <Parallax type="portfolio" />
+      </section>
       <section>Portfolio1</section>
       <section>Portfolio2</section>
       <section>Portfolio3</section>
