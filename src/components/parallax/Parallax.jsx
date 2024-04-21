@@ -1,9 +1,18 @@
+import { useRef } from "react";
 import "./Parallax.scss";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export const Parallax = ({ type }) => {
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({ target: ref });
+
+  const yBg = useTransform(scrollYProgress);
+
   return (
     <div
       className="parallax"
+      ref={ref}
       style={{
         background:
           type === "services"
@@ -11,10 +20,12 @@ export const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      <h1>{type === "services" ? "What we do?" : "What we did?"}</h1>
-      <div className="mountains"></div>
-      <div className="planets"></div>
-      <div className="stars"></div>
+      <motion.h1>
+        {type === "services" ? "What we do?" : "What we did?"}
+      </motion.h1>
+      <motion.div className="mountains"></motion.div>
+      <motion.div className="planets"></motion.div>
+      <motion.div className="stars"></motion.div>
     </div>
   );
 };
