@@ -1,5 +1,5 @@
 export const Links = () => {
-  const items = ["Homepage", "Services", "Portfolio", "Contacts", "About"];
+  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
   return (
     <div className="links">
       {items.map((item) => (
