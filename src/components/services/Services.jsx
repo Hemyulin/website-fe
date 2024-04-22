@@ -1,5 +1,6 @@
+import { useRef } from "react";
 import "./Services.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const vatiants = {
   initial: {
@@ -19,12 +20,18 @@ const vatiants = {
 };
 
 export const Services = () => {
+  const ref = useRef();
+  const isInView = useInView(ref, { margin: "-100px" });
+
   return (
     <motion.div
       className="services"
       variants={vatiants}
       initial="initial"
-      animate="animate"
+      //   animate="animate"
+      //   whileInView="animate"
+      ref={ref}
+      animate={isInView && "animate"}
     >
       <motion.div className="textContainer" variants={vatiants}>
         <p>
@@ -37,13 +44,13 @@ export const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="a bunch of people in a room" />
           <h1>
-            <b>Unique </b>
+            <motion.b whileHover={{ color: "orange" }}>Unique </motion.b>
             Ideas
           </h1>
         </div>
         <div className="title">
           <h1>
-            <b>For Your </b>
+            <motion.b whileHover={{ color: "orange" }}>For Your </motion.b>
             Business.
           </h1>
           <button>WHAT WE DO?</button>
