@@ -21,12 +21,12 @@ const items = [
     img: "https://github.com/Hemyulin/js-chess/raw/main/assets/img/game_screenshot1.png",
     desc: "Apartment Checker is a JavaScript-based application designed to automatically scrape the WBM Website for new apartment listings every 7 minutes. Using the Pushover service, it sends real-time notifications to your phone, helping you stay ahead in the competitive apartment hunting process.",
   },
-  {
-    id: 4,
-    title: "JS-Chess",
-    img: "https://github.com/Hemyulin/js-chess/raw/main/assets/img/game_screenshot1.png",
-    desc: "This project is a simple implementation of a chess game using JavaScript.",
-  },
+  // {
+  //   id: 4,
+  //   title: "JS-Chess",
+  //   img: "https://github.com/Hemyulin/js-chess/raw/main/assets/img/game_screenshot1.png",
+  //   desc: "This project is a simple implementation of a chess game using JavaScript.",
+  // },
 ];
 
 const Single = ({ item }) => {
