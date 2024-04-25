@@ -11,19 +11,24 @@ function App() {
   return (
     <div>
       <Cursor />
+
       <section id="Homepage">
         <Navbar />
         <Hero />
       </section>
+
       <section>
         <Parallax type="services" />
       </section>
+
       <section id="Services">
         <Services />
       </section>
+
       <section>
         <Parallax type="portfolio" />
       </section>
+
       <Portfolio />
 
       <section id="Contact">

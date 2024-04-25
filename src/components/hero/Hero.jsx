@@ -39,6 +39,20 @@ const sliderVeriants = {
 };
 
 export const Hero = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("Contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToPortfolio = () => {
+    const portfolioSection = document.getElementById("Portfolio");
+    if (portfolioSection) {
+      portfolioSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -53,10 +67,12 @@ export const Hero = () => {
             Full Stack Web Developer
           </motion.h1>
           <motion.div className="buttons" variants={textVeriants}>
-            <motion.button variants={textVeriants}>
+            <motion.button onClick={scrollToPortfolio} variants={textVeriants}>
               See the latest works
             </motion.button>
-            <motion.button variants={textVeriants}>Contact me</motion.button>
+            <motion.button onClick={scrollToContact} variants={textVeriants}>
+              Contact me
+            </motion.button>
           </motion.div>
           <motion.img
             src="/scroll.png"
