@@ -92,7 +92,7 @@ export const Services = () => {
             user experiences. With a focus on performance and scalability, I
             build backends that you can depend on.
           </p>
-          <button>Learn More</button>
+          <button onClick={scrollToPortfolio}>Learn More</button>
         </motion.div>
         <motion.div
           className="box"
