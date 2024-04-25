@@ -55,6 +55,13 @@
       position: absolute;
       margin: auto;
       z-index: -1;
+
+      @include mobile {
+        padding: 10px;
+        width: 50%;
+        height: 50%;
+        align-items: center;
+      }
     }
 
     form {

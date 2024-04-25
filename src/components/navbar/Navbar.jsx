@@ -15,14 +15,14 @@ export const Navbar = () => {
           Daniel Budiansky
         </motion.span>
         <div className="social">
-          <a href="#">
+          {/* <a href="#">
             <img src="/facebook.png" alt="facebook logo" />
-          </a>
-          <a href="#">
+          </a> */}
+          <a href="https://www.instagram.com/danielhemyulin/">
             <img src="/instagram.png" alt="instagram logo" />
           </a>
-          <a href="#">
-            <img src="/youtube.png" alt="youtube logo" />
+          <a href="https://www.linkedin.com/in/daniel-budiansky-fullstack/">
+            <img src="linkedin.png" alt="youtube logo" />
           </a>
           <a href="#">
             <img src="/github-mark.webp" alt="github logo" />

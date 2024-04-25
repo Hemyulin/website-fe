@@ -50,7 +50,7 @@ export const Hero = () => {
         >
           <motion.h2 variants={textVeriants}>DANIEL BUDIANSKY</motion.h2>
           <motion.h1 variants={textVeriants}>
-            Full stack web developer
+            Full Stack Web Developer
           </motion.h1>
           <motion.div className="buttons" variants={textVeriants}>
             <motion.button variants={textVeriants}>
@@ -63,6 +63,7 @@ export const Hero = () => {
             alt="scroll down icon"
             variants={textVeriants}
             animate="scrollButton"
+            className="scrollDownImg"
           />
         </motion.div>
       </div>
@@ -75,7 +76,7 @@ export const Hero = () => {
         React TypeScript Express Node.JS MongoDB Flutter
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="picture of Daniel Budiansky" />
+        <img src="/daniel.png" alt="picture of Daniel Budiansky" />
       </div>
     </div>
   );

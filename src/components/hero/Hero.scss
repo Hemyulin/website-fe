@@ -71,7 +71,7 @@
     right: 0;
 
     @include mobile {
-      height: 50%;
+      height: 55%;
       width: 100%;
       top: unset;
       bottom: 0;
@@ -92,5 +92,11 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+  }
+
+  .scrollDownImg {
+    @include mobile {
+      visibility: hidden;
+    }
   }
 }
