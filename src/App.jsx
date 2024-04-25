@@ -15,16 +15,15 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
+      <section>
         <Parallax type="services" />
       </section>
-      <section>
+      <section id="Services">
         <Services />
       </section>
-      <section id="Portfolio">
+      <section>
         <Parallax type="portfolio" />
       </section>
-
       <Portfolio />
 
       <section id="Contact">
