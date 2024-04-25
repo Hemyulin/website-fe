@@ -24,7 +24,7 @@ export const Navbar = () => {
           <a href="https://www.linkedin.com/in/daniel-budiansky-fullstack/">
             <img src="linkedin.png" alt="youtube logo" />
           </a>
-          <a href="#">
+          <a href="https://github.com/Hemyulin">
             <img src="/github-mark.webp" alt="github logo" />
           </a>
         </div>
