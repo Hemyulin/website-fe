@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import "./Services.scss";
 import { motion, useInView } from "framer-motion";
+import { set } from "mongoose";
 
 const variants = {
   initial: {
@@ -20,6 +21,9 @@ const variants = {
 };
 
 export const Services = () => {
+  const [modalIsShow, setModalIsShow] = useState(false);
+  const [modalIs2Show, setModalIs2Show] = useState(false);
+
   const ref = useRef();
 
   const isInView = useInView(ref, { margin: "-100px" });
@@ -36,6 +40,14 @@ export const Services = () => {
     if (portfolioSection) {
       portfolioSection.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const toggleModal = () => {
+    setModalIsShow(!modalIsShow);
+  };
+
+  const toggleModal2 = () => {
+    setModalIs2Show(!modalIs2Show);
   };
 
   return (
@@ -68,6 +80,40 @@ export const Services = () => {
           </h1>
           <button onClick={scrollToContact}>CONTACT ME</button>
         </div>
+        {modalIsShow && (
+          <div className="backdrop">
+            <div className="modal">
+              <h1>Collaborative Leadership</h1>
+              <p>
+                I lead with compassion and inclusivity, prioritizing my
+                colleagues' well-being to ensure everyone feels valued. Drawing
+                from my experience as a tank commander, I understand the
+                importance of clear communication and decisive leadership,
+                particularly in high-pressure situations. I believe a great team
+                thrives on happiness, so I aim to foster a workplace where joy
+                and productivity coexist. For me, leadership is about guiding
+                and empowering, directing our collective efforts toward shared
+                goals with empathy and understanding.
+              </p>
+              <button onClick={toggleModal}>Got it</button>
+            </div>
+          </div>
+        )}
+        {modalIs2Show && (
+          <div className="backdrop">
+            <div className="modal">
+              <h1>Humor in Tech</h1>
+              <p>
+                In my work approach, I subtly integrate humor to alleviate
+                stress and foster a positive team environment. This balanced use
+                of humor enhances creativity and engagement, ensuring we
+                navigate challenges effectively while maintaining
+                professionalism in all settings.
+              </p>
+              <button onClick={toggleModal2}>Got it</button>
+            </div>
+          </div>
+        )}
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
         <motion.div
@@ -106,7 +152,7 @@ export const Services = () => {
             teammates for our collective success.
           </p>
 
-          <button>Explore Leadership Style</button>
+          <button onClick={toggleModal}>Explore Leadership Style</button>
         </motion.div>
         <motion.div
           className="box"
@@ -119,7 +165,7 @@ export const Services = () => {
             positive working environment that enhances productivity and team
             cohesion.
           </p>
-          <button>Why It Matters</button>
+          <button onClick={toggleModal2}>Why It Matters</button>
         </motion.div>
       </motion.div>
     </motion.div>
