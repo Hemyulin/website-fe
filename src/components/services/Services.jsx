@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import "./Services.scss";
 import { motion, useInView } from "framer-motion";
-import { set } from "mongoose";
 
 const variants = {
   initial: {
