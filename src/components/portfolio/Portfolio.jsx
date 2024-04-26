@@ -8,18 +8,21 @@ const items = [
     title: "JS-Chess",
     img: "https://github.com/Hemyulin/js-chess/raw/main/assets/img/game_screenshot1.png",
     desc: "This project is a simple implementation of a chess game using JavaScript.",
+    link: "https://hemyulin.github.io/js-chess/",
   },
   {
     id: 2,
     title: "IronSteam",
-    img: "https://github.com/Hemyulin/js-chess/raw/main/assets/img/game_screenshot1.png",
+    img: "https://github.com/Jorgesq9/Iron-Steam/raw/main/src/assets/ironSteamScreenshot1.png",
     desc: "Welcome to IronSteam, the premier platform for showcasing and distributing JavaScript games created by our talented cohort. IronSteam allows developers to register, login, and publish their games, providing a dedicated space for their creations to be enjoyed by players worldwide.",
+    link: "https://ironsteam.netlify.app/",
   },
   {
     id: 3,
     title: "Apartment Checker",
     img: "https://github.com/Hemyulin/js-chess/raw/main/assets/img/game_screenshot1.png",
     desc: "Apartment Checker is a JavaScript-based application designed to automatically scrape the WBM Website for new apartment listings every 7 minutes. Using the Pushover service, it sends real-time notifications to your phone, helping you stay ahead in the competitive apartment hunting process.",
+    link: "https://github.com/Hemyulin/apartment-checker",
   },
   // {
   //   id: 4,
@@ -48,7 +51,14 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-style"
+            >
+              See Demo
+            </a>
           </motion.div>
         </div>
       </div>
