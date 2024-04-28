@@ -1,0 +1,46 @@
+@import "../../app.scss";
+
+.techStack {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20%;
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 96px;
+      font-weight: 100;
+
+      @include mobile {
+        font-size: 36px;
+      }
+    }
+
+    hr {
+      width: 80%;
+    }
+  }
+
+  .listContainer {
+    padding: 20px;
+    margin: 20px;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+
+      .listSection {
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Parallax } from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import { Services } from "./components/services/Services";
+import { TechStack } from "./components/techStack/TechStack";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
       </section>
 
       <Portfolio />
+
+      <section id="TechStack">
+        <TechStack />
+      </section>
 
       <section id="Contact">
         <Contact />
