@@ -32,9 +32,9 @@ function App() {
 
       <Portfolio />
 
-      <section id="TechStack">
+      {/* <section id="TechStack">
         <TechStack />
-      </section>
+      </section> */}
 
       <section id="Contact">
         <Contact />

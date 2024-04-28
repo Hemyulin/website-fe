@@ -20,7 +20,7 @@ const items = [
   {
     id: 3,
     title: "Apartment Checker",
-    img: "https://github.com/Hemyulin/js-chess/raw/main/assets/img/game_screenshot1.png",
+    img: "https://github.com/Hemyulin/apartment-checker/raw/main/public/screenshot.jpeg",
     desc: "Apartment Checker is a JavaScript-based application designed to automatically scrape the WBM Website for new apartment listings every 7 minutes. Using the Pushover service, it sends real-time notifications to your phone, helping you stay ahead in the competitive apartment hunting process.",
     link: "https://github.com/Hemyulin/apartment-checker",
   },
