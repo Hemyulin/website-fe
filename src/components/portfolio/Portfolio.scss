@@ -103,6 +103,10 @@
           width: 200px;
           cursor: pointer;
           text-align: center;
+
+          @include mobile {
+            z-index: 999;
+          }
         }
       }
     }
